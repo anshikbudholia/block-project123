@@ -1,0 +1,146 @@
+<%- include('header') %>
+
+  
+    <!-- Custom styles for this template -->
+    <link href="/css/styles.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <section class="login-wrap">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 mt-5">
+            <div class="login-box ">
+              <h1><span style="color:orange;">Login</span>Here</h1>
+              
+              <% if(message.length > 0){ %>
+                <div class="alert alert-danger">
+                  <%= message %>
+                </div>
+
+             <%  } %>
+
+              
+             
+            
+              <br>
+              <form action="/verifylogin" method="post">
+                <div class="form-group log mb-4">
+                  <input type="email" name="email" class="form-control" placeholder="Email or username">
+                </div>
+                <div class="form-group log mb-4">
+                  <input type="password" name="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group text-center">
+                  <button type="submit" class="btn btn-danger">Log In</button>
+                  <br>
+                  <div class="mt-3">
+                    <span class="text-white mt-3">DON`T HAVE AN ACCOUNT?</span><a class="btn reg"
+                      href="/register">&nbsp;REGISTER NOW</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    </div><!--container-fluid-->
+    <div class="container-fluid d mt-4">
+    </div><!--container-fluid-->
+    <div class="footer">
+      <div class="container-fluid"
+        style="background-color: #000000; padding-top: 30px; padding-bottom: 30px; color: white;">
+        <div class="row">
+          <div class="col-md-5 text-center">
+            <br>
+            <img src="https://technext.github.io/hexashop/assets/images/white-logo.png">
+
+            <br><br>
+          </div>
+          <div class="col-md-7">
+
+            <h2 class="f"><span style="color: violet;">CONTACT </span>US</h2>
+
+            <p>We're a team focusing on redefining the way the hospitality industry works by bringing in concept based
+              restaurants across India. We are truly committed to catering to the ever-changing cosmopolitan taste of
+              the customer and revolutioning the F & B industry!</p>
+
+            <!--address div row start-->
+            <div class="row">
+              <div class="col-md-6">
+                <span style="color: red;">Address</span>
+                <strong></strong>
+                <br>
+                6, Chanakyapuri Shopping Complex, 48, Malcha Marg, New Delhi 110021
+                </span>
+              </div>
+              <div class="col-md-6">
+                <span style="color: red;">Franchie Enquiry</span>
+                <strong></strong>
+                <br>
+                Mobile:
+                <a href="tel:09313663486"><b>+91 9313663486</b>
+                </a>
+                <br>
+                Email:
+                <a href="mailto:franchise@firstfiddle.in"><b>franchise@firstfiddle.in</b>
+                </a>
+                </span>
+              </div>
+            </div><!--row end-->
+            <div class="row">
+              <div class="col-md-6">
+                <span style="color: red;">Address</span>
+                <strong></strong>
+                <br>
+                6, Chanakyapuri Shopping Complex, 48, Malcha Marg, surat 110021
+                </span>
+              </div>
+              <div class="col-md-6">
+                <span style="color: red;">HR Enquiry</span>
+                <strong></strong>
+                <br>
+                Mobile:
+                <a href="tel:09313663486"><b>+91 9313663486</b>
+                </a>
+                <br>
+                Email:
+                <a href="mailto:franchise@firstfiddle.in"><b>franchise@firstfiddle.in</b>
+                </a>
+                </span>
+              </div>
+            </div><!--row end-->
+
+
+          </div>
+        </div><!--row  end-->
+      </div><!--container-fluid-->
+    </div><!--footer-->
+
+    <div class="container-fluid" style="background-color: #000; padding-top: 30px; padding-bottom: 30px;">
+      <div class="row" style="display: block;">
+        <div class="text-center">
+          <p class="copyright-text" style=" font-size:13px;color: white;margin-top: 0px;
+            margin-bottom: 0rem;">PRIVACY POLICY | TERMS AND CONDITIONS | <a _ngcontent-ulr-c2="" routerlink="/blog"
+              style="text-decoration: none; color: #fff;" ng-reflect-router-link="/blog"
+              href="/blog">BLOG</a><br>COPYRIGHT © 2021 <a href="http://www.firstfiddle.in"
+              style="color: white;text-decoration: none;" target="_blank">FIRST FIDDLE F&amp;B PRIVATE LIMITED</a></p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  </body>
+
+  </html>

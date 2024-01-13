@@ -1,0 +1,89 @@
+<%- include('../../featured.ejs') %>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<%- include('../admin-sidebar.ejs') %>
+
+
+
+<div class="w-3/5">
+    <div class="flex justify-between mb-4">
+        <div>
+            <h1 class="text-3xl font-medium">About List</h1>
+        </div>
+        <div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success bg-green-500 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add About
+            </button>
+        </div>
+    </div>
+    <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">#ID</th>
+            <th scope="col">Image</th>
+            <th scope="col">About Us</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+  
+        
+            
+  <% a.forEach((item)=>{ %>
+    <tr>
+      <th scope="row"><%= item._id %></th>
+      <td><img src="<%= item.image.url %>" width="50px" alt=""></td>
+      <td><%= item.about %></td>
+     
+      <td class="space-x-3">
+        <a href="/admin/aboutview/<%= item._id %>">
+          <i class="fa-solid fa-eye"></i>
+        </a>
+          <a href="/admin/aboutedit/<%= item._id %>">
+              <i class="fa-solid fa-pen-to-square "></i>
+          </a>
+          <a href="/admin/aboutdelete/<%= item._id %>">
+              <i class="fa-solid fa-trash-can text-red-500"></i>
+          </a>
+      </td>
+    </tr>
+   <% }) %>
+        </tbody>
+      </table>
+  </div>
+
+  
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add About</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="/insertabout" method="post" enctype="multipart/form-data">
+           
+            <div class="mb-3">
+                <label for="" class="mb-1">About us</label>
+                <textarea type="text" name="about" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="" class="mb-1">Upload Image</label>
+              <input type="file" name="image" class="form-control">
+          </div>
+            <div class="mb-3 d-flex justify-content-end">
+              <button type="button" class="btn btn-secondary me-2 bg-slate-500" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary bg-blue-500">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<%- include('../../explore.ejs') %>

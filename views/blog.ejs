@@ -1,0 +1,153 @@
+<%- include('header') %>  
+
+
+<section class="collection">
+  <div class="container py-5">
+    <h1 class="text-center">Blogs</h1>
+    <div class="row py-5">
+      <% b.forEach((item)=>{ %>
+      <div class="col-lg-4">
+        <div class="card">
+         
+            <img class ="image/p22.jpg" src="<%= item.image.url %>" alt="">
+            <a href="/readmore/<%= item.id %>"class="btn4 mt-3 ml-2"  >Read more</a>
+
+          <input type="button" value="Add To Cart">
+          <h5 ><%= item.title %></h5>
+          <p class="pt-3"><%= item.description.slice(0,100) %></p>
+      
+          <p><small><del>$24.99</del><span>> $12.99</span></small></p>
+          
+        
+    
+      
+    
+  
+<!--<div class="col-lg-4">
+        <div class="card ">
+          <img src="image/d22.jpg" class="img-fluid mb-3" alt="">
+           <input type="button" value="Add To Cart">
+          <h5>Product Name</h5>
+          <p><small><del>$24.99</del><span>$12.99</span></small></p>
+        </div>
+    
+      </div>
+ <div class="col-lg-4">
+        <div class="card ">
+          <img src="image/d3.jpg" class="img-fluid mb-3" alt="">
+           <input type="button" value="Add To Cart">
+          <h5>Product Name</h5>
+          <p><small><del>$24.99</del><span>$12.99</span></small></p>
+        </div>
+        
+      </div>-->
+      
+
+
+    </div>
+  </div>
+  <% }) %>
+  </div>
+  </div>
+</section>
+
+
+
+<section class="contact bg-light pt-5 text-center">
+  <div class="container">
+    <div class="row py-3">
+      <div class="col-lg-7 mx-auto">
+        
+          <fieldset>
+        <input type="text" placeholder="Enter Your name">
+      </fieldset>
+      
+      <br>
+    
+        <input type="text" placeholder="Enter Your email address">
+        <button class="btn5 my-5">Get Notified</button>
+        <p>Copyright 2020 proweb all rights reserved</p>
+    </div>
+  </div>
+</section>
+
+
+<section>
+</div><!--container-fluid-->  
+<div class="container-fluid d mt-4">
+</div><!--container-fluid-->
+<div class="footer">
+  <div class="container-fluid" style="background-color: #000000; padding-top: 30px; padding-bottom: 30px; color: white;">
+    <div class="row">
+      <div class="col-md-5 text-center">
+        <br>
+        <img src="https://technext.github.io/hexashop/assets/images/white-logo.png">
+        
+        <br><br>
+      </div>
+      <div class="col-md-7">
+        
+        <h2 class="f"><span style="color: violet;">CONTACT </span>US</h2>
+        
+        <p>We're a team focusing on redefining the way the hospitality industry works by bringing in concept based restaurants across India. We are truly committed to catering to the ever-changing cosmopolitan taste of the customer and revolutioning the F & B industry!</p>
+
+        <!--address div row start-->
+        <div class="row">
+          <div class="col-md-6">
+            <span style="color: red;">Address</span>
+              <strong ></strong>
+              <br>
+              6, Chanakyapuri Shopping Complex, 48, Malcha Marg, New Delhi 110021 
+            </span>
+          </div>
+          <div class="col-md-6">
+            <span style="color: red;">Franchie Enquiry</span>
+              <strong ></strong>
+              <br >
+               Mobile: 
+               <a href="tel:09313663486"><b >+91 9313663486</b>
+               </a>
+               <br > 
+               Email: 
+               <a  href="mailto:franchise@firstfiddle.in"><b >franchise@firstfiddle.in</b>
+               </a>
+            </span>
+          </div>  
+        </div><!--row end-->
+        <div class="row">
+          <div class="col-md-6">
+            <span style="color: red;">Address</span>
+              <strong ></strong>
+              <br>
+  6, Chanakyapuri Shopping Complex, 48, Malcha Marg, surat 110021
+            </span>
+          </div>
+          <div class="col-md-6">
+            <span style="color: red;">HR Enquiry</span>
+              <strong ></strong>
+              <br >
+               Mobile: 
+               <a href="tel:09313663486"><b >+91 9313663486</b>
+               </a>
+               <br > 
+               Email: 
+               <a  href="mailto:franchise@firstfiddle.in"><b >franchise@firstfiddle.in</b>
+               </a>
+            </span>
+          </div>
+        </div><!--row end-->  
+
+
+      </div>  
+    </div><!--row  end--> 
+  </div><!--container-fluid-->  
+</div><!--footer-->   
+
+<div class="container-fluid" style="background-color: #000; padding-top: 30px; padding-bottom: 30px;"><div class="row" style="display: block;"><div class="text-center"><p  class="copyright-text" style=" font-size:13px;color: white;margin-top: 0px;
+            margin-bottom: 0rem;">PRIVACY POLICY | TERMS AND CONDITIONS | <a _ngcontent-ulr-c2="" routerlink="/blog" style="text-decoration: none; color: #fff;" ng-reflect-router-link="/blog" href="/blog">BLOG</a><br>COPYRIGHT © 2021 <a  href="http://www.firstfiddle.in" style="color: white;text-decoration: none;" target="_blank">FIRST FIDDLE F&amp;B PRIVATE LIMITED</a></p></div></div></div>
+</section>
+
+
+
+</body>
+</html>

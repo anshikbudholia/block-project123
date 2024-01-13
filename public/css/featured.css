@@ -1,0 +1,225 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.nav-link{
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	padding: 0em;
+}
+.navbar-brand{
+	color: black;
+	font-weight: 30px;
+	font-weight: 800;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    padding-right: 40px;
+}
+
+
+.casourel-caption{
+	position: absolute;
+	top: 55%;
+	transform: translateY(-80%);
+	left: -8%;
+}
+.casourel-caption h1{
+	font-size: 70px;
+	font-weight: 400;
+	color: black;
+}
+.btn0{
+	background-color: rgb(71, 35, 35);
+    height: 50px;
+    width: 100px;
+    color: white;
+    outline: none;
+    border: none;
+}
+.btn0:hover{
+	background-color: white;
+	color: yellowgreen;
+	transition: 0.4s;
+}
+.sub{
+	background-color: burlywood;
+}
+.sub input{
+	height: 51px;
+	width: 50%;
+	color: black;
+	outline:none;
+	padding: 10px;
+}
+.btn4{
+	height: 36px;
+	width: 42%;
+	color: white;
+	background-color: #ab6760;
+	outline: none;
+	border: none;
+	margin-left:-2px;
+	text-align: center;
+}
+.btn4:hover{
+	background-color: burlywood;
+	color: white;
+	transition: 0.6s;
+}
+.fas{
+	font-size-adjust: 32px;
+}
+/*----------- */
+
+
+.collection span{
+	color: yellowgreen;
+	font-size-adjust: 23px;
+	font-weight: 800;
+	padding-left: 5px;
+}
+.card{
+	border: none;
+}
+.collection input{
+	position: absolute;
+	height: 45px;
+	width: 110px;
+	background-color: yellowgreen;
+	color: white;
+	outline: none;
+	border: none;
+	text-align: center;
+	top: 40%;
+	left: 30%;
+	opacity: 0;
+}
+.collection .card:hover input{
+	opacity: 1;
+	transition: 1s;
+
+}
+.collection input:hover{
+	background-color: grey;
+	transition: 0.5s;
+}
+
+*{
+margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+footer{
+	background: black;
+	color: white;
+	width: 100%;
+
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1180px;
+}
+
+
+
+.parallex{
+	
+
+	background:  url("https://technext.github.io/hexashop/assets/images/products-page-heading.jpg")no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	width: 100%;
+}
+.parallex h1{
+	font-size: 55px;
+	font-weight: 700;
+}
+.parallex p{
+	font-size: 22px;
+
+}
+.btn1{
+	height: 40px;
+	width: 110px;
+	background: transparent;
+	border: 2px solid white;
+	color: white;
+	outline: none;
+
+	border-radius: 4px;
+
+}
+.btn2:hover{
+	background-color: white;
+	color: yellowgreen;
+	transition: 0.3s;
+	border: none;
+}
+.btn2{
+	height: 40px;
+	width: 110px;
+	background-color: white;
+	outline: none;
+	border: none;
+	color: yellowgreen;
+	border-radius: 4px;
+
+}
+.btn3:hover{
+	background-color: yellowgreen;
+	color: white;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+
+}
+.article a{
+	list-style: none;
+	color: black;
+	outline: none;
+}
+.articlea:hover{
+	color: yellowgreen;
+	transition: 0.3s;
+}
+.article p{
+	font-size:21px;
+
+}
+.article span{
+	color: yellowgreen;
+}
+.article small{
+	font-size: 15px;
+}
+.contact input{
+	height: 50px;
+	width: 100%;
+	outline: none;
+	border: none;
+	color: grey;
+	background-color: white;
+	padding: 10px;
+	-webkit-box-shadow: 0px 2px 28px-8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 28px -8px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 28px -8px rgba(0, 0, 0, 0.75);
+
+}
+.btn5{
+	height: 45px;
+	width: 160px;
+	background-color: yellowgreen;
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: inline-block; 
+}

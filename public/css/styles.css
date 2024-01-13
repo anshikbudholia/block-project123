@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+	font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 12px;
+}
+body::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #f5f5f5;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0,0.3);
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #81919e;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0,0.3);
+}
+body::-webkit-scrollbar-corner{
+    border-radius: 10px;
+    background: linear-gradient(red,yellow);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0,0.3);
+}
+.bg-blue {background-color:#007EDB;}
+.navbar-brand img { height:30px; }
+.navbar-dark .navbar-nav .nav-link {font-weight: bold;color:#fff; font-size: 18px; padding-right: 40px;}
+.navbar-dark .navbar-nav .active .nav-link {color:#fff;}
+
+.banner{
+    background-image: url(/assets/images/banner2.jpg);
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+}
+.blog-box {text-align: center; margin-bottom: 20px;}
+.blog-box h3 { margin:20px 0; font-size:22px; color:#000;}
+.blog-box p { color:#666; }
+.blog-box span, .posted-on span { font-style: italic; color:#000; }
+.blog-box img { width:100%; }
+.mtb-40 { margin:40px 0; min-height:450px;}
+
+.blog-right h3 {background-color:#000;color: #fff; padding:5px 15px;font-size:20px;}
+.detail-img {margin:40px 0px;}
+.rb-box-img { margin-right:15px; }
+.rb-box-img img { width:100px;}
+.rb-box {display: flex;}
+.rb-box-desc h4 {font-size:20px;color:#000;font-weight: 600;}
+.rb-box-desc p {color:#666;}
+.rb-box {margin-bottom:10px;}
+.recent-post a:hover {text-decoration: none;}
+.recent-post a:hover h4 {color:#007EDB;}
+
+.categories {margin-top:20px;}
+.categories ul {padding:0;margin:0; list-style: none;}
+.categories ul li { border-bottom:1px dotted #ccc; padding:5px 0px;}
+.categories ul li a {color:#333; display: block;}
+.categories ul li a:hover {color:#007EDB; text-decoration: none;}
+.body-content { min-height:380px; }
+.error-404 { text-align: center; }
+.error-404 h1{ font-size:10em; }
+.service-error {text-align:center; padding:50px 0;}
+.service-error h1 { font-size: 3em;text-transform: uppercase;color:#007EDA;}
+
+/*Admin*/
+.dash-left{margin-top: 30px;}
+.dash-left ul {padding:0;margin:0;list-style:none;}
+.dash-left ul li { background-color: #f1f1f1; margin-bottom:5px;}
+.dash-left ul li a {color:#333; padding:5px 15px; display: block;}
+.dash-left ul li:hover a {background-color:#029477; text-decoration: none; color:#fff;}
+.dash-left ul li a.active {background-color:#029477; color:#fff;}
+.dash-header {display:flex; justify-content: space-between;}
+/* ========================================================================= */
+/* Table CSS */
+
+.action a {margin:0 5px;}
+table .table_heading{
+    background-color: #029477!important; 
+    color: white!important;
+}
+tr:nth-child(odd){
+    background-color: #eeeeee;
+}
+.action-btn{
+    background-color: #029477;
+    border-radius: 12px;
+    margin-right: 5px;
+    border: 0;
+}
+.action-btn:nth-child(1):hover{
+    background-color: rgb(0, 157, 255);
+}
+.action-btn:nth-child(2):hover{
+    background-color: rgb(255, 132, 0);
+}
+table tr th{
+    padding: 12px;
+}
+tr td{
+    padding: 12px;
+}
+/* ========================================================================== */
+/* Footer CSS */
+.social-icons a{
+    padding: 8px 93px;
+    background: #003a50;
+    color: #fff;
+    font-size: 35px;
+}
+.social-icons a i:hover,.social-icons a i.active{
+    color: orange;
+    transition: 0.4s ease;
+}
+footer {background-color: #000;color:#fff; padding:20px;}
+/* ======================================= */
+/*validation*/
+.ng-valid[required], .ng-valid.required {border: 1px solid #42A948;}
+.error {color:#ff0000;}
+.success { color:green; }
+.contact-message { text-align: center; }
+
+@media (max-width: 767px) {
+	.intro-text {display: none;}
+}
+/* ========================================== */
+/* Login CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+.login-wrap{
+    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(/image/photopix.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.login-box {box-shadow: 1px 1px 7px #666;padding:20px;margin-top:10%; background: rgb(37, 35, 35);}
+.login-box h1 {font-size:38px;color:white;text-align: center;margin: 0; font-weight: bold; font-family: 'Lato', sans-serif;}
+.login-box p{font-size: 12px;font-weight: 600;}
+.btn-info{
+    color: white;
+    background: orange;
+    margin-bottom: 10px;
+    padding: 10px 27px;
+    border-radius: 20px;
+    border: 0;
+}
+.btn-danger{
+    color: white;
+    background: orange;
+    padding: 10px 27px;
+    border-radius: 20px;
+    border: 0;
+}
+.btn-danger:hover{
+    background-color: rgb(39, 224, 163);
+}
+.log input[type="text"]{
+    border: 0;
+    outline: 0;
+    color: white;
+    background: rgb(72, 67, 67);
+}
+.log input[type="password"]{
+    background: rgb(72, 67, 67);
+    color: white;
+    border: 0;
+    outline: 0;
+}
+.reg{
+    color: orange;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-left: 2px;
+}
+.reg:hover{
+    color: rgb(255, 251, 1);
+    border: 0;
+}
+.navbar-brand img {
+    height: 53px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    padding-right: 40px;
+}

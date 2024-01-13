@@ -1,0 +1,47 @@
+<%- include('../../featured.ejs') %>
+
+<%- include('../admin-sidebar.ejs') %>
+<div class="w-3/5">
+    <div class="flex justify-between mb-4">
+      <div>
+        <h1 class="text-3xl font-medium"> about view</h1>
+      </div>
+      </div>
+      
+      
+        
+    <table class="table table-bordered">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">#ID</th>
+          
+          <th scope="col">aboutus</th>
+          
+          <th scope="col">image</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+     
+   
+      <tr>
+        <th scope="row"><%= view._id %></th>
+     
+        <td><%= view.about %></td>
+        <td><img src="<%= view.image.url %>" alt=""></td>
+        <td></td>
+        
+     
+      </tr>
+  
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+ 
+
+
+<%- include('../../explore.ejs') %>

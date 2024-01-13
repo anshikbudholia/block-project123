@@ -1,0 +1,98 @@
+<%- include('../../featured.ejs') %>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <%- include('../admin-sidebar.ejs') %>
+
+
+
+    <div class="w-3/5">
+      <div class="flex justify-between mb-4">
+        <div>
+          <h1 class="text-3xl font-medium">Category List</h1>
+        </div>
+        <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success bg-green-500 text-white" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Add Category
+          </button>
+        </div>
+      </div>
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th scope="col">#ID</th>
+            
+            <th scope="col">title</th>
+            
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+       
+      <% d.forEach((item)=>{ %>
+        <tr>
+          <th scope="row"><%= item._id %></th>
+          
+          <td><%= item.cat_name %></td>
+          <td><%= item.description %></td>
+          
+          <td><img src="<%= item.image.url %>" width="50px" alt=""></td>
+        
+          <td class="space-x-3">
+            <a href="/admin/categoryview/<%= item._id %>">
+              <i class="fa-solid fa-eye"></i>
+            </a>
+            <a href="/admin/categoryedit/<%= item._id %>">
+              <i class="fa-solid fa-pen-to-square text-blue-500"></i>
+            </a>
+            <a href="/admin/categorydelete/<%= item._id %>">
+              <i class="fa-solid fa-trash-can text-red-500"></i>
+            </a>
+          </td>
+        </tr>
+      <% }) %>
+        </tbody>
+      </table>
+    </div>
+    
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Category</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="/insertcategory" method="post" enctype="multipart/form-data">
+            
+              <div class="mb-3">
+                <label for="" class="mb-1">Blog Title</label>
+                <input type="text" name="cat_name" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="" class="mb-1">Description</label>
+                <textarea type="text" name="description" class="form-control"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="" class="mb-1">Upload Image</label>
+                <input type="file" name="image" class="form-control">
+              </div>
+              <div class="mb-3 d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary me-2 bg-slate-500" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary bg-blue-500">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+            </form>
+          </div>
+       
+     
+    <%- include('../../explore.ejs') %>
+  

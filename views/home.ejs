@@ -1,0 +1,209 @@
+<%- include('./header.ejs')  %>
+
+
+<!--home ejs-->
+
+
+  <section class="parallex py-5">
+    <div class="container py-5 text-white text-center">
+      <div class="row py-3">
+        <div class="col-lg-9 mx-auto">
+  <h1>Hexashop</h1>
+  <p class="py-0">Awesome Quality and Product to buy our item...</p>
+  <p class="py-0">Best clothes for men,women & kids.. </p>
+  Best trends for accessories...</p>
+  
+  <img src="https://technext.github.io/hexashop/assets/images/baner-right-image-01.jpg">
+   
+  
+  <img src="  https://technext.github.io/hexashop/assets/images/baner-right-image-02.jpg">
+  </div>
+  </div>
+  
+  <img src="https://technext.github.io/hexashop/assets/images/baner-right-image-03.jpg" class="text-center " >
+  
+  <img src="  https://technext.github.io/hexashop/assets/images/baner-right-image-04.jpg">
+   <button class="btn4 mt-3 ml-2">Purchase Now</button>
+  </div>
+  
+          
+        
+      
+    
+   
+  
+  
+  </section>
+  
+
+  <!--end of casourel -->
+  <section class="sub">
+    <div class="container py-5 text-black">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="row">
+            <div class="col-lg-2">
+              <span><i class="fas fa-sync"></i></span>
+            </div>
+            <div class="col-lg-10"></div>
+            <h5>Return and Exchange</h5>
+          </div>
+      </div>
+       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <div class="row">
+            <div class="col-lg-2">
+              <span><i class="fas fa-gift"></i></span>
+            </div>
+            <div class="col-lg-10">
+            <h5>Return gift cards</h5>
+          </div>
+      </div>
+      </div>
+  
+       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <div class="row">
+            <div class="col-lg-2">
+              <span><i class="fas fa-user-shield"></i></span>
+            </div>
+            <div class="col-lg-10">
+            <h5>online support</h5>
+          </div>
+      </div>
+      </div>
+    
+  
+       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+       <div class="row">
+         <input type="text" placeholder="your email">
+         <button class="btn0">subscribe</button>
+       </div>
+      </div>
+    </div>
+    </div>
+    
+  </section>
+  
+ 
+  
+  
+  
+  <section class="article">
+    <div class="container py-5">
+      <h1 class="text-center">Latest Articles</h1>
+      <div class="row py-5">
+        
+  
+        <% b.forEach((item)=>{ %>
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img class="image/p24.jpg" src="<%= item.image.url %>" width="280px" alt="">
+            <!--<a class="btn-my-5" href="/readmore" style="background-color: greenyellow;">Read more.....</a>-->
+             <a href="/readmore/<%= item.id %>"class="btn4 mt-3 ml-2"  >Read more</a>
+              <!--<a class=" text-white p-2 rounded" href="/readmore">Read More</a>
+            </div>-->
+              <h1 class="text-xl font-medium mb-2"><%= item.title %></h1>
+              <p class="pt-3"><%= item.description.slice(0,100) %></p>
+              <p><span><%= item.createdAt.toLocaleDateString() %></span></p>
+              <small>By admin /<span>Business</span></small>
+            
+              
+            </div>
+          </div>
+
+        <% }) %>
+  
+        </section> 
+  
+<section>
+</div><!--container-fluid-->
+<div class="container-fluid d mt-4">
+</div><!--container-fluid-->
+<div class="footer">
+  <div class="container-fluid"
+    style="background-color: #000000; padding-top: 30px; padding-bottom: 30px; color: white;">
+    <div class="row">
+      <div class="col-md-5 text-center">
+        <br>
+        <img src="https://technext.github.io/hexashop/assets/images/white-logo.png">
+
+        <br><br>
+      </div>
+      <div class="col-md-7">
+
+        <h2 class="f"><span style="color: violet;">CONTACT </span>US</h2>
+
+        <p>We're a team focusing on redefining the way the hospitality industry works by bringing in concept based
+          restaurants across India. We are truly committed to catering to the ever-changing cosmopolitan taste of
+          the customer and revolutioning the F & B industry!</p>
+
+        <!--address div row start-->
+        <div class="row">
+          <div class="col-md-6">
+            <span style="color: red;">Address</span>
+            <strong></strong>
+            <br>
+            6, Chanakyapuri Shopping Complex, 48, Malcha Marg, New Delhi 110021
+            </span>
+          </div>
+          <div class="col-md-6">
+            <span style="color: red;">Franchie Enquiry</span>
+            <strong></strong>
+            <br>
+            Mobile:
+            <a href="tel:09313663486"><b>+91 9313663486</b>
+            </a>
+            <br>
+            Email:
+            <a href="mailto:franchise@firstfiddle.in"><b>franchise@firstfiddle.in</b>
+            </a>
+            </span>
+          </div>
+        </div><!--row end-->
+        <div class="row">
+          <div class="col-md-6">
+            <span style="color: red;">Address</span>
+            <strong></strong>
+            <br>
+            6, Chanakyapuri Shopping Complex, 48, Malcha Marg, surat 110021
+            </span>
+          </div>
+          <div class="col-md-6">
+            <span style="color: red;">HR Enquiry</span>
+            <strong></strong>
+            <br>
+            Mobile:
+            <a href="tel:09313663486"><b>+91 9313663486</b>
+            </a>
+            <br>
+            Email:
+            <a href="mailto:franchise@firstfiddle.in"><b>franchise@firstfiddle.in</b>
+            </a>
+            </span>
+          </div>
+        </div><!--row end-->
+
+
+      </div>
+    </div><!--row  end-->
+  </div><!--container-fluid-->
+</div><!--footer-->
+
+<div class="container-fluid" style="background-color: #000; padding-top: 30px; padding-bottom: 30px;">
+  <div class="row" style="display: block;">
+    <div class="text-center">
+      <p class="copyright-text" style=" font-size:13px;color: white;margin-top: 0px;
+        margin-bottom: 0rem;">PRIVACY POLICY | TERMS AND CONDITIONS | <a _ngcontent-ulr-c2="" routerlink="/blog"
+          style="text-decoration: none; color: #fff;" ng-reflect-router-link="/blog"
+          href="/blog">BLOG</a><br>COPYRIGHT © 2021 <a href="http://www.firstfiddle.in"
+          style="color: white;text-decoration: none;" target="_blank">FIRST FIDDLE F&amp;B PRIVATE LIMITED</a></p>
+    </div>
+  </div>
+</div>
+
+</section>
+</body>
+
+</html>
+
+
